@@ -48,3 +48,52 @@ console.log(n1.toExponential(2));//十进制，三位数
 VM858:3 1.2e+5
 VM858:4 124345.6789
 VM858:5 1.24e+5
+
+//当尾数为5，而尾数后面的数字均为0时，应看尾数“5”的前一位：
+//若前一位数字此时为奇数，就应向前进一位；
+//若前一位数字此时为偶数，则应将尾数舍去。数字“0”在此时应被视为偶数。
+//0.153050——0.1530
+//12.6450——12.64
+//18.2750——18.28
+//0.153750——0.1538
+//12.7350——12.74
+//21.845000——21.84
+console.log(Math.round(-3.5));
+console.log(Math.round(-4.5));
+VM1226:1 -3
+VM1226:2 -4
+
+
+console.log(Number(undefined));
+console.log(Number(null));
+console.log(Number(true));
+console.log(Number(false));
+console.log(Number(""));
+console.log(Number("abc"));
+console.log(Number("123.345xx"));//
+console.log(Number("32343,345xx"));
+console.log(Number({x:1,y:2}));
+VM1219:1 NaN
+VM1219:2 0
+VM1219:3 1
+VM1219:4 0
+VM1219:5 0
+VM1219:6 NaN
+VM1219:7 NaN
+VM1219:8 NaN
+VM1219:9 NaN
+
+console.log(String(undefined));
+console.log(String(null));
+console.log(String(true));
+console.log(String(false));
+console.log(String(0));
+console.log(String(234));
+console.log(String({x:1,y:2}));
+VM1230:1 undefined
+VM1230:2 null
+VM1230:3 true
+VM1230:4 false
+VM1230:5 0
+VM1230:6 234
+VM1230:7 [object Object]
