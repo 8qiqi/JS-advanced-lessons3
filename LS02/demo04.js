@@ -16,7 +16,6 @@ str.slice(-2);//"mn"
 //slice(start,end)和substring(start,end)
 
 //他们两个的end都是原字符串的索引，意思为截取到end（不包括end）位置的字符
-
 //二者的区别是：
 
 //slice中的start如果为负数，会从尾部算起，-1表示倒数第一个，-2表示倒数第2个，此时end必须为负数，并且是大于start的负数，否则返回空字符串
