@@ -15,7 +15,7 @@ console.log(n1.toPrecision(2));//1.2e+4
 console.log(n1.toString());//12345.6789
 console.log(n1.toExponential(2));//1.23e+4
 
-//NaN
+//NaN 
 var x = Number("xis021");//试着转成Number类型
 console.log(x);//NaN
 isNaN(x);//true

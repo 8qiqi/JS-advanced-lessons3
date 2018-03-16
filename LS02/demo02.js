@@ -38,7 +38,7 @@ console.log(parseInt("32343,345xx"));//32343
 console.log(parseFloat("1.5,2.4"));//1.5
 console.log(Number({x:1,y:2}));//NaN
 
-
+ 
 //->String
 console.log(String(undefined));//undefined
 console.log(String(null));//null

@@ -17,5 +17,5 @@ var feeReturnValue = fee();
 console.log(feeReturnValue);//undefined
 
 
-//null 需要注意的一点 
+//null 需要注意的一点  
 console.log(typeof null);//object
