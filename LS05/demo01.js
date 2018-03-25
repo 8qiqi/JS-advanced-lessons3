@@ -1,6 +1,8 @@
 //一、算术运算符
 //+一般转换成字符串 -一般转换成number
 //+与+=转换成字符串类型;/与/=转换成number类型
+//运用：变量转换成数字 num-0
+ //     变量转换成字符串 num+""
 console.log("1"+"2"); //"12"
 console.log("1"+2); //"12"
 console.log(1+{}); //"1[object Object]"
@@ -19,6 +21,10 @@ console.log(y);//2+3+4=9
 //二、关系运算符
 //==若等号两边都是引用类型，空间相同，则为true;类型不同，隐式类型转换（若只有一边为引用类型，进行类型转换）
 //===若等号两边都是引用类型，空间相同，则为true；类型不同，则为false
+console.log(null===undefined);//false
+console.log(null===null);//true
+console.log(undefined===undefined);//true
+console.log(null==undefined);//true
 
 var obj1={x:2,y:[1],z:false};
 var obj2={x:2,y:[1],z:new Boolean(true)};
