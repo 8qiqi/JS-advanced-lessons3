@@ -52,7 +52,7 @@ tmp[3]();
 //renturn j,则返回的都是9
 //renturn i,则返回的都是10
 
-
+ 
 //变量共享问题
 for (var i = 0; i < 5; i++) {
     setTimeout(function() {

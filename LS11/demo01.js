@@ -13,7 +13,7 @@ var i = function(){
 true && function(a,b){
     return a>b?a:b;
 }(5,9);//9
-
+ 
 
 !function(x,y){
     return x==y?true:false; // === 返回什么
